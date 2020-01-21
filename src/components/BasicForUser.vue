@@ -33,7 +33,7 @@
                   If you don't have account, please click Sign Up button.
                 </span>
               </div>
-              <v-btn rounded outlined large dark ripple v-if="isSwitch" id="sign-up" @click="isSwitch = !isSwitch">Log in</v-btn>
+              <v-btn rounded outlined large dark ripple v-if="isSwitch" id="sign-up" @click="isSwitch = !isSwitch">Log In</v-btn>
               <v-btn rounded outlined large dark ripple v-else id="sign-in" @click="isSwitch = !isSwitch">Sign Up</v-btn>
             </v-layout>
           </v-flex>
@@ -41,8 +41,11 @@
             <v-layout column align-center justify-center pa-3 mt-5>
               <v-flex xs12 mb-3 mt-5>
                 <div class="login-wrapper text-xs-center">
-                  <div class="display-1 font-weight-black" v-if="isSwitch">Create Account</div>
-                  <div class="display-1 font-weight-black" v-else>Log in</div>
+                  <v-btn @click="goHome" depressed outlined fab small color="blue-grey lighten-4" class="mr-3 mb-4">
+                  <v-icon color="grey darken-4">mdi-home</v-icon>
+                  </v-btn>
+                  <span class="display-1 font-weight-black" v-if="isSwitch">Create Account</span>
+                  <span class="display-1 font-weight-black" v-else>Log In</span>
                 </div>
               </v-flex>
               <v-flex xs12 mb-3>
@@ -63,7 +66,7 @@
                   filled full-width single-line label="NickName" 
                   background-color="#f4f8f7"
                   color="grey darken-2"
-                  prepend-inner-icon="mdi-account-outline"
+                  prepend-inner-icon="mdi-emoticon-outline"
                   mb-0
                 ></v-text-field>
                 <v-text-field v-if="isSwitch"
@@ -89,7 +92,8 @@
                   prepend-inner-icon="mdi-lock-outline"
                   @click:append="show1 = !show1"></v-text-field>
               </v-flex>
-              <v-btn rounded large dark ripple color="teal" id="sign-up" @click="goHome">Sign up</v-btn>
+              <v-btn v-if="isSwitch" rounded large dark ripple color="teal" id="sign-up">Sign up</v-btn>
+              <v-btn v-else rounded large dark ripple color="teal" id="sign-up">Sign in</v-btn>
             </v-layout>
           </v-flex>
         </v-layout>
@@ -104,7 +108,7 @@
 
 export default {
     data: () => ({
-    show1: true,
+    show1: false,
     isSwitch: false,
     password: "Password"
     }),
