@@ -89,12 +89,13 @@
 
     </v-app-bar>
 
-    <v-content>
-      <v-container class="fill-height">
+    <v-content >
+      <v-container class="fill-height" style="background:white" >
         <v-row
+        
           justify="center"
         >
-        <CodeRender/>
+        <CodeRender />
 
         </v-row>
       </v-container>
