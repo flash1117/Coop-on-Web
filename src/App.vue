@@ -1,19 +1,28 @@
 <template>
-
     <v-app>
-    
-      <router-view></router-view>
+        <!-- <NewNav/> -->
+        <v-content style="padding-top: 24px">
+            <router-view/>
+        </v-content>
     </v-app>
 </template>
 
 <script>
-    import router from './router'
+    import NewNav from "./views/NewNav";
+    
     export default {
-        router,
         name: 'App',
 
         components: {
+            NewNav,
+          
         },
-
     };
 </script>
+
+<style scoped>
+    a{
+        color: white !important;
+        text-decoration: none;
+    }
+</style>
