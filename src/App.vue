@@ -1,7 +1,8 @@
 <template>
     <v-app>
         <!-- <NewNav/> -->
-        <Sidebar/>
+        <!-- <Sidebar/> -->
+        <TopNav/>
         <v-content style="padding-top: 24px">
             <router-view/>
         </v-content>
@@ -10,14 +11,13 @@
 
 <script>
     import NewNav from "./views/NewNav";
-    import Sidebar from "./views/Sidebar";
+    import TopNav from "./views/TopNav";
     export default {
         name: 'App',
 
         components: {
             NewNav,
-            Sidebar,
-          
+            TopNav,
         },
     };
 </script>
