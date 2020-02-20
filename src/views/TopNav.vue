@@ -12,14 +12,7 @@
                     class="navbar__icon navbar__toggle--icon"
                 ></v-icon>
             </span>
-            <ul class="navbar__nav" v-if="!isAuthorized">
-                <li class="nav__item">
-                    <router-link to="/" class="nav__link">Home</router-link>
-                </li>
-                <li class="nav__item">
-                    <router-link to="/" class="nav__link">About</router-link>
-                </li>
-            </ul>
+            
             <ul class="navbar__nav navbar__nav--right" v-if="!isAuthorized">
                 <li class="nav__item">
                     <a
@@ -27,7 +20,6 @@
                         target="_blank"
                         class="nav__link"
                     >
-                        <v-icon name="logo-github" class="navbar__icon"></v-icon>
                     </a>
                 </li>
                 <li class="nav__item">
