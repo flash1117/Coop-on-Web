@@ -3,7 +3,7 @@
         <!-- <NewNav/> -->
         <!-- <Sidebar/> -->
         <TopNav/>
-        <CodeRoom/>
+        <TeamRoom/>
         <v-content style="padding-top: 24px">
             <router-view/>
         </v-content>
@@ -13,14 +13,14 @@
 <script>
     import NewNav from "./views/NewNav";
     import TopNav from "./views/TopNav";
-    import CodeRoom from "./views/CodeRoomDesign";
+    import TeamRoom from "./views/TeamRoom";
     export default {
         name: 'App',
 
         components: {
             NewNav,
             TopNav,
-            CodeRoom,
+            TeamRoom,
         },
     };
 </script>
