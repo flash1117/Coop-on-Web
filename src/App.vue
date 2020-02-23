@@ -3,7 +3,7 @@
         <!-- <NewNav/> -->
         <!-- <Sidebar/> -->
         <TopNav/>
-        <TeamRoom/>
+        <!-- <TeamRoom/> -->
         <v-content style="padding-top: 24px">
             <router-view/>
         </v-content>
