@@ -9,11 +9,11 @@
               <v-avatar size="125px">
                 <img
                   class="img-circle elevation-7 mb-1"
-                  src="https://raw.githubusercontent.com/vuetifyjs/docs/dev/static/doc-images/lists/1.jpg"
+                  src="https://randomuser.me/api/portraits/men/81.jpg"
                 >
               </v-avatar>
-              <div class="headline">John <span style="font-weight:bold">Carter</span></div>
-              <div class="subheading text-xs-center grey--text pt-1 pb-3">Lorem ipsum dolor sit amet</div>
+              <div class="headline">KiTae <span style="font-weight:bold">Kim</span></div>
+              <div class="subheading text-xs-center grey--text pt-1 pb-3">부가설명</div>
               <v-layout justify-space-between>
                 <a href="javascript:;" class="body-2">Home</a>
                 <a href="javascript:;" class="body-2">About</a>
@@ -43,16 +43,16 @@
                 </v-card-text>
                 <v-card-actions>
                   <v-btn icon class="red--text">
-                    <v-icon medium>fa-reddit</v-icon>
+                    <v-icon medium>reddit</v-icon>
                   </v-btn>
                   <v-btn icon class="light-blue--text">
-                    <v-icon medium>fa-twitter</v-icon>
+                    <v-icon medium>twitter</v-icon>
                   </v-btn>
                   <v-btn icon class="blue--text text--darken-4">
-                    <v-icon medium>fa-facebook</v-icon>
+                    <v-icon medium>facebook</v-icon>
                   </v-btn>
                   <v-spacer></v-spacer>
-                  <v-btn flat class="blue--text">Read More</v-btn>
+                  <v-btn flat class="blue--text">Enter</v-btn>
                 </v-card-actions>
               </v-card>
             </div>
@@ -60,48 +60,28 @@
         </v-layout>
       </v-container>
     </v-content>
-    <v-footer class="secondary" app>
-      <v-layout row wrap align-center>
-        <v-flex xs12>
-          <div class="white--text ml-3">
-            Made with
-            <v-icon class="red--text">favorite</v-icon>
-            by <a class="white--text" href="https://vuetifyjs.com" target="_blank">Vuetify</a>
-            and <a class="white--text" href="https://github.com/vwxyzjn" target="_blank">Costa Huang</a>
-          </div>
-        </v-flex>
-      </v-layout>
-    </v-footer>
   </v-app>
  </div>
 </template>
 
-<script>
-
-</script>
-
- 
- <script src="https://unpkg.com/vue/dist/vue.js"></script>
- <script src="https://unpkg.com/vuetify/dist/vuetify.js"></script>
- <script src="https://use.fontawesome.com/73c8e2621d.js"></script>
  <script>
     export default {
     data: () => ({
         title: 'Your Logo',
         posts: [
           {
-            title: 'Fusce ullamcorper tellus',
-            content: 'Fusce ullamcorper tellus sed maximus rutrum. Donec imperdiet ultrices maximus. Donec non tellus non neque pellentesque fermentum. Aenean in pellentesque urna.',
+            title: 'Code Room 1',
+            content: 'description 1',
             imgUrl: 'https://raw.githubusercontent.com/vuetifyjs/docs/dev/static/doc-images/cards/drop.jpg'
           },
           {
-            title: 'Donec vitae suscipit lectus, a luctus diam.',
-            content: 'Donec vitae suscipit lectus, a luctus diam. Proin vitae felis gravida, lobortis massa sit amet, efficitur erat. Morbi vel ultrices nisi.',
+            title: 'Code Room 2',
+            content: 'description 2',
             imgUrl: 'https://raw.githubusercontent.com/vuetifyjs/docs/dev/static/doc-images/cards/docks.jpg'
           },
           {
-            title: 'Vestibulum condimentum quam',
-            content: 'At sagittis sapien vulputate. Vivamus laoreet lacus id magna rutrum dapibus. Donec vel pellentesque arcu. Maecenas mollis odio tempus felis elementum commodo.',
+            title: 'Code Room 3',
+            content: 'description 3',
             imgUrl: 'https://raw.githubusercontent.com/vuetifyjs/docs/dev/static/doc-images/cards/plane.jpg'
           }
         ]
